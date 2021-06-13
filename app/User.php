@@ -31,11 +31,6 @@ class User extends Authenticatable
         return asset('storage/banners/' . $value);
     }
 
-    public function setPasswordAttribute($value)
-    {
-        $this->attributes['password'] = Hash::make($value);
-    }
-
     public function tweets()
     {
         return $this-> hasMany('App\Tweet')->latest();
@@ -65,11 +60,5 @@ class User extends Authenticatable
     {
         return $this->hasOne('App\Tweet')->latest();
     }
-
-    public function saveDeleteImage()
-    {
-
-    }
-
-
+    
 }

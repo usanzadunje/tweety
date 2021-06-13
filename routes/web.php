@@ -22,16 +22,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function (Request $request) {
-    $request->session()->flash('key', 'Helloo from flash session message');
-    return $request->session()->all();
-});
-
-Route::get('/test1', function (Request $request) {
-    return $request->session()->all();
-});
-
-
 Route::middleware('auth')->group(function () {
 
     Route::get('/tweets', 'TweetController@index')->name('home');
