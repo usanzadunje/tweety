@@ -1,7 +1,7 @@
 <x-master>
-    <div class="container mx-auto flex justify-center">
+    <div class="container mx-auto w-1/5">
         <x-panel>
-            <div class="col-md-8">
+            <div class="w-full">
                 <x-slot name="heading">Login</x-slot>
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
@@ -48,17 +48,28 @@
 
 
                     <div class="mb-6">
-                        <input
-                                type="checkbox"
-                                class="mr-1"
-                                id="remember"
-                                name="remember"
-                                {{ old('remember') ? 'checked' : ''}}
-                        >
+                        <div class="flex justify-between">
+                            <div>
+                                <input
+                                        type="checkbox"
+                                        class="mr-1"
+                                        id="remember"
+                                        name="remember"
+                                        {{ old('remember') ? 'checked' : ''}}
+                                >
 
-                        <label for="remember" class="text-xs text-gray-700 font-bold uppercase">
-                            Remember me?
-                        </label>
+                                <label for="remember" class="text-xs text-gray-700 font-bold uppercase">
+                                    Remember me?
+                                </label>
+                            </div>
+
+                            <a
+                                    href="{{ route('password.request') }}"
+                                    class="text-xs text-gray-700"
+                            >
+                                Forgot your password?
+                            </a>
+                        </div>
 
                         @error('remember')
                         <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
@@ -73,12 +84,6 @@
                         >
                             LOGIN
                         </button>
-                        <a
-                                href="{{ route('password.request') }}"
-                                class="text-xs text-gray-700"
-                        >
-                            Forgot your password?
-                        </a>
                     </div>
                 </form>
             </div>

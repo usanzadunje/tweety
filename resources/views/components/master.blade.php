@@ -27,7 +27,7 @@
     <section class="px-8 py-4 mb-6">
         <header class="container mx-auto py-4">
             <h1>
-                <a href="#">
+                <a href="{{ auth()->user() ? route('home') : route('welcome') }}">
                     <img src="{{asset('images/logo.jpeg')}}" alt="Tweety logo">
                 </a>
             </h1>

@@ -1,5 +1,5 @@
 <x-master>
-    <div class="container mx-auto flex justify-center">
+    <div class="container mx-auto w-1/4">
         <x-panel>
             <x-slot name="heading">Register</x-slot>
 

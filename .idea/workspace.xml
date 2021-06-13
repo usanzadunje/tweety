@@ -6,11 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="9c89d971-a3a1-405d-a7e9-d3617c445253" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/LikeButtons.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/LikeButtons.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/panel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/friends-list.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/delete-tweet-button.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/delete-tweet-button.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/publish-tweet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/publish-tweet.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/single-tweet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/single-tweet.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profiles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/publish-tweet-panel.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sidebar-links.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sidebar-links.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/single-tweet.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/timeline.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -232,6 +242,9 @@
     <option name="height" value="1047" />
   </component>
   <component name="ProjectId" id="1tqVgjQL4HdzQ3pMNsEUfVHmrcE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -372,7 +385,7 @@
       <workItem from="1600511199968" duration="3757000" />
       <workItem from="1600715673009" duration="22000" />
       <workItem from="1623496723635" duration="1226000" />
-      <workItem from="1623599700771" duration="3297000" />
+      <workItem from="1623599700771" duration="7947000" />
     </task>
     <servers />
   </component>

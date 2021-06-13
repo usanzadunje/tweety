@@ -7,7 +7,7 @@
                 placeholder="Whats up doc?"
                 style="border:none; outline:none; resize: none; overflow: hidden;"
                 wire:model="body"
-                onkeyup="textCounter(this,'counter',191);"
+                onkeyup="updateCounter(this,'counter',191);"
         ></textarea>
         <div class="flex justify-between">
             <div></div>
@@ -15,15 +15,19 @@
         </div>
 
         <script>
-            function textCounter(field,field2,maxlimit)
-            {
+            function updateCounter(field, field2, maxlimit) {
                 var countfield = document.getElementById(field2);
-                if ( field.value.length > maxlimit ) {
-                    field.value = field.value.substring( 0, maxlimit );
+                if(field.value.length > maxlimit) {
+                    field.value = field.value.substring(0, maxlimit);
                     return false;
-                } else {
+                }else {
                     countfield.value = 0 + field.value.length + "/" + maxlimit;
                 }
+            }
+
+            function resetCounter(field, maxlimit) {
+                var countfield = document.getElementById(field);
+                countfield.value = 0 + "/" + maxlimit;
             }
         </script>
 
@@ -40,6 +44,7 @@
             <button
                     type="submit"
                     class="bg-blue-500 hover:bg-blue-700 rounded-lg shadow py-2 px-2 text-white"
+                    onclick="resetCounter('counter', 191)"
             >
 
                 Tweetay

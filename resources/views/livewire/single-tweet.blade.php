@@ -20,7 +20,7 @@
                     </a>
                 </h5>
 
-                <p class="text-sm mb-3">
+                <p class="text-sm mb-3 break-all">
                     {{$tweet->body}}
                 </p>
 

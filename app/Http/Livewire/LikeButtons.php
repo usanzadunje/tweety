@@ -12,7 +12,7 @@ class LikeButtons extends Component
     public $tweet;
 
     protected $listeners = [
-        'tweetLiked' => '$refresh'
+        'tweetLiked' => '$refresh',
     ];
 
     public function mount(Tweet $tweet)
@@ -26,9 +26,12 @@ class LikeButtons extends Component
         {
             $this->tweet->like(current_user());
 
-            event(new UserLikedMyTweetEvent($this->tweet));
-
-        } else
+            if(auth()->id() !== $this->tweet->user_id)
+            {
+                event(new UserLikedMyTweetEvent($this->tweet));
+            }
+        }
+        else
         {
             $this->tweet->removeLike();
         }
@@ -40,7 +43,8 @@ class LikeButtons extends Component
         if(!$this->tweet->isDislikedBy(current_user()))
         {
             $this->tweet->dislike(current_user());
-        } else
+        }
+        else
         {
             $this->tweet->removeLike();
         }
