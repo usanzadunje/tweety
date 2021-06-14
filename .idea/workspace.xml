@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9c89d971-a3a1-405d-a7e9-d3617c445253" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/explore-people-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/explore-people-list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/single-notification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/single-notification.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/notifications/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/notifications/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,7 +372,7 @@
       <workItem from="1600715673009" duration="22000" />
       <workItem from="1623496723635" duration="1226000" />
       <workItem from="1623599700771" duration="8080000" />
-      <workItem from="1623676373576" duration="7431000" />
+      <workItem from="1623676373576" duration="8443000" />
     </task>
     <servers />
   </component>
