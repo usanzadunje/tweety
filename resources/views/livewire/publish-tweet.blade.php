@@ -1,9 +1,9 @@
-<div class="border border-blue-400 rounded-lg px-8 py-6 mb-8">
+<div class="border-2 border-blue-400 rounded-lg px-8 py-6 mb-8">
     <form wire:submit.prevent="publish" method="POST">
 
         <textarea
                 name="body"
-                class="w-full"
+                class="w-full text-xl"
                 placeholder="Whats up doc?"
                 style="border:none; outline:none; resize: none; overflow: hidden;"
                 wire:model="body"
@@ -31,7 +31,7 @@
             }
         </script>
 
-        <hr class="my-4 border-b border-blue-100">
+        <hr class="my-4 border-b border-blue-300">
 
         <footer class="flex justify-between items-center">
             <img

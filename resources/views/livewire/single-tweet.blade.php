@@ -14,13 +14,18 @@
             </div>
 
             <div>
-                <h5 class="font-bold mb-3">
+                <h5 class="font-bold mb-1">
                     <a href="{{route('profile', $tweet->user)}}">
                         {{$tweet->user->name}}
+                        <span class="text-gray-600 font-light text-sm">{{'@' . $tweet->user->username}}</span>
+                        <span class="text-gray-600 font-light text-sm relative">
+                            &#9679;
+                            {{$tweet->created_at->diffForHumans()}}
+                        </span>
                     </a>
                 </h5>
 
-                <p class="text-sm mb-3 break-all">
+                <p class="text-base mb-2 break-all">
                     {{$tweet->body}}
                 </p>
 

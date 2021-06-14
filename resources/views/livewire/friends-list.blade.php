@@ -1,22 +1,24 @@
-<div class="bg-blue-200 rounded-lg py-4 px-6">
-    <h3 class="font-bold text-xl mb-4">Following</h3>
+<div class="bg-blue-200 rounded-lg py-4 w-56 fixed">
+    <h3 class="font-bold text-2xl mb-4 text-center">Following</h3>
 
-    <ul>
+    <ul class="px-4">
         @forelse(auth()->user()->follows as $user)
-            <li class="{{ $loop->last ? '' : 'mb-4' }}">
-                <div class="flex items-center text-sm">
+            <li class="{{ $loop->last ? '' : 'mb-4' }} hover:font-bold">
+                <div class="flex items-center text-lg">
                     <a href="{{route('profile', $user)}}">
                         <img
                                 src="{{$user->avatar}}"
                                 alt=""
                                 class="rounded-full mr-2"
-                                width="40px"
-                                height="40px"
+                                width="50px"
+                                height="50px"
                         >
                     </a>
 
 
-                    <a href="{{route('profile', $user)}}">{{ $user->name }}</a>
+                    <a href="{{route('profile', $user)}}">
+                        {{ $user->name }}
+                    </a>
                 </div>
             </li>
         @empty

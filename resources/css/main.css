@@ -3,3 +3,16 @@
 @tailwind components;
 
 @tailwind utilities;
+
+*{
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+button {
+    outline:none !important;
+}
+
+.mirror {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
