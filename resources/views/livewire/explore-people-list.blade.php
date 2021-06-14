@@ -1,4 +1,4 @@
-<div>
+<div class="pt-10">
     @foreach($users as $user)
         <div class="flex justify-between">
             <a href="{{ $user->path() }}">
@@ -12,6 +12,9 @@
 
                     <div>
                         <h4 class="font-bold mt-4">{{ '@' . $user->name }}</h4>
+                        <p class="break-all">
+                            {{ \Illuminate\Support\Str::limit($user->bio, 70, '...') }}
+                        </p>
                     </div>
                 </div>
             </a>
@@ -21,7 +24,7 @@
             </div>
         </div>
 
-        {!! $loop->last ? '' : '<hr class="m-auto my-4 border-b border-blue-300" width="98%">' !!}
+        <hr class="m-auto my-4 border-b border-blue-300" width="98%">
 
     @endforeach
 </div>
