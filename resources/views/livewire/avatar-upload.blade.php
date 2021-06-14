@@ -6,7 +6,7 @@
     <div class="avatar flex">
         <input
                 type="file"
-                class="border border-blue-400 p-2 w-full"
+                class="border border-blue-300 p-2 w-full"
                 id="avatar"
                 name="avatar"
                 wire:model="avatar"
@@ -14,7 +14,7 @@
 
         @if ($avatar)
             <label for="avatar">
-                <img class="rounded-full border border-blue-400" src="{{ $avatar->temporaryUrl() }}" alt="Your avatar" width="50">
+                <img class="rounded-full border border-blue-300" src="{{ $avatar->temporaryUrl() }}" alt="Your avatar" width="50">
             </label>
         @endif
     </div>

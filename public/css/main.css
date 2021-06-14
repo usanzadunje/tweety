@@ -22245,6 +22245,10 @@ button {
   outline:none !important;
 }
 
+input:focus {
+  outline:none !important;
+}
+
 .mirror {
   transform: scaleX(-1);
 }
