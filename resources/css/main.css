@@ -1,13 +1,18 @@
+/*START IMPORTS*/
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
+/*END IMPORTS*/
 
+/*START GLOBAL STYLES*/
 *{
     font-family: Roboto, Helvetica, sans-serif;
 }
+/*END GLOBAL STYLES*/
 
+/*START ELEMENT STYLES*/
 button {
     outline:none !important;
 }
@@ -15,8 +20,11 @@ button {
 input:focus {
     outline:none !important;
 }
+/*END ELEMENT STYLES*/
 
+/*START CUSTOM CLASSES*/
 .mirror {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+/*END CUSTOM CLASSES*/

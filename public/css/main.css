@@ -1,3 +1,5 @@
+/*START IMPORTS*/
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -22237,9 +22239,17 @@ video {
           animation: bounce 1s infinite;
 }
 
+/*END IMPORTS*/
+
+/*START GLOBAL STYLES*/
+
 *{
   font-family: Roboto, Helvetica, sans-serif;
 }
+
+/*END GLOBAL STYLES*/
+
+/*START ELEMENT STYLES*/
 
 button {
   outline:none !important;
@@ -22249,9 +22259,15 @@ input:focus {
   outline:none !important;
 }
 
+/*END ELEMENT STYLES*/
+
+/*START CUSTOM CLASSES*/
+
 .mirror {
   transform: scaleX(-1);
 }
+
+/*END CUSTOM CLASSES*/
 
 @media (min-width: 640px) {
   .sm\:container {

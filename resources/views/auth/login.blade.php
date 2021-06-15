@@ -65,7 +65,7 @@
 
                             <a
                                     href="{{ route('password.request') }}"
-                                    class="text-xs text-gray-700"
+                                    class="text-xs text-gray-700 font-bold mt-1"
                             >
                                 Forgot your password?
                             </a>
