@@ -4,7 +4,7 @@
         <button wire:click="like" class="text-xs flex items-center">
             <i class="fas fa-thumbs-up mr-1 mirror text-sm hover:text-blue-700"></i>
 
-            <span class="font-bold text-sm mt-1">{{ $tweet->likeCount() ?? 0}}</span>
+            <span class="font-bold text-sm mt-1">{{ $tweet->likeCount() }}</span>
         </button>
     </div>
 
@@ -13,7 +13,7 @@
         <button wire:click="dislike" class="text-xs flex items-center mt-1">
             <i class="fas fa-thumbs-down mr-1 mirror text-sm hover:text-red-700"></i>
 
-            <span class="font-bold text-sm">{{ $tweet->dislikeCount() ?? 0 }}</span>
+            <span class="font-bold text-sm">{{ $tweet->dislikeCount() }}</span>
         </button>
 
     </div>

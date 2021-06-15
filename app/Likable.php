@@ -20,18 +20,12 @@ trait Likable
 
     public function likeCount()
     {
-        return DB::table('likes')
-            ->select(DB::raw('sum(liked) likes'))
-            ->where('tweet_id', $this->id)
-            ->get()->sum('likes');
+        return DB::select('SELECT like_count(?) likeCount', [$this->id])[0]->likeCount ?? 0;
     }
 
     public function dislikeCount()
     {
-        return DB::table('likes')
-            ->select(DB::raw('sum(!liked) dislikes'))
-            ->where('tweet_id', $this->id)
-            ->get()->sum('dislikes');
+        return DB::select('SELECT dislike_count(?) dislikeCount', [$this->id])[0]->dislikeCount ?? 0;
     }
 
     public function isLikedBy(User $user)
