@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTweetDeletionTrigger extends Migration
+class CreateUserCreationTrigger extends Migration
 {
     /**
      * Run the migrations.
@@ -15,11 +15,11 @@ class CreateTweetDeletionTrigger extends Migration
     public function up()
     {
         DB::unprepared("
-            CREATE TRIGGER after_tweet_delete
-                AFTER DELETE ON tweets
+            CREATE TRIGGER after_user_create
+                AFTER INSERT ON users
                 FOR EACH ROW
-            DELETE FROM notifications
-            WHERE tweet_id = Old.id   
+            INSERT INTO tweets (user_id, body, created_at)
+            VALUES (New.id, 'Welcome to Tweety. This is sample tweet!', CURRENT_TIMESTAMP())
         ");
     }
 
@@ -30,6 +30,6 @@ class CreateTweetDeletionTrigger extends Migration
      */
     public function down()
     {
-        DB::unprepared('DROP TRIGGER IF EXISTS after_tweet_delete');
+        DB::unprepared('DROP TRIGGER IF EXISTS after_user_create');
     }
 }

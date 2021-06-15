@@ -54,11 +54,10 @@ trait Likable
 
     public function like($user = null, $liked = true)
     {
-        $this->likes()->updateOrCreate([
-            'user_id' => $user ? $user->id : auth()->user()->id(),
-        ], [
-            'liked' => $liked,
-        ]);
+        DB::statement(
+            'CALL like_dislike(?, ?, ?)',
+            [$user ? $user->id : auth()->user()->id(), $this->id, $liked]
+        );
     }
 
     public function removeLike()
