@@ -57,5 +57,5 @@
             <p class="text-gray-500">Following</p>
         </div>
     </header>
-    @livewire('timeline', ['tweets' => $tweets])
+    @livewire('timeline', ['user' => $user])
 </x-app>

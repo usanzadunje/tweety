@@ -2,6 +2,6 @@
     <div>
         @livewire('publish-tweet')
 
-        @livewire('timeline', ['tweets' => $tweets])
+        @livewire('timeline')
     </div>
 </x-app>

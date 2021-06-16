@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9c89d971-a3a1-405d-a7e9-d3617c445253" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Likable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Likable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_15_150224_create_tweet_deletion_trigger.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_15_150224_create_tweet_deletion_trigger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TweetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TweetController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Timeline.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Timeline.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profiles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tweets/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tweets/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,7 +382,9 @@
       <workItem from="1623599700771" duration="8080000" />
       <workItem from="1623676373576" duration="11882000" />
       <workItem from="1623688530675" duration="597000" />
-      <workItem from="1623760474140" duration="8214000" />
+      <workItem from="1623760474140" duration="8349000" />
+      <workItem from="1623779678500" duration="10000" />
+      <workItem from="1623855015662" duration="5321000" />
     </task>
     <servers />
   </component>

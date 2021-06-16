@@ -9,13 +9,14 @@ class Timeline extends Component
 {
     use WithPagination;
 
+    public $user;
 
     protected $listeners = ['freshParant' => '$refresh'];
 
     public function render()
     {
         return view('livewire.timeline', [
-            'tweets' => auth()->user()->timeline(),
+            'tweets' => $this->user ? $this->user->tweets()->simplePaginate(10) : auth()->user()->timeline(),
         ]);
     }
 }

@@ -10,9 +10,7 @@ class TweetController extends Controller
 
     public function index()
     {
-        return view('tweets.index', [
-            'tweets' => auth()->user()->timeline(),
-        ]);
+        return view('tweets.index');
     }
 
     public function store(Request $request)
@@ -20,7 +18,7 @@ class TweetController extends Controller
         $validated = request()->validate(['body' => 'required|max:191']);
         Tweet::create([
             'user_id' => auth()->id(),
-            'body' => $validated['body']
+            'body' => $validated['body'],
         ]);
 
         $request->session()->flash('new-tweet', 'New tweet has been posted!');
