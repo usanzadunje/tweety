@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c89d971-a3a1-405d-a7e9-d3617c445253" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/analytics/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tweety.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tweety.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TweetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TweetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Timeline.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Timeline.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profiles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tweets/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tweets/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_16_181749_create_user_tweets_with_likes_procedure.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_16_181749_create_user_tweets_with_likes_procedure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/delete-tweet-button.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/follow-button.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/like-buttons.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sidebar-links.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sidebar-links.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,6 +228,9 @@
       <path value="$PROJECT_DIR$/vendor/pusher/pusher-php-server" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -384,7 +392,9 @@
       <workItem from="1623688530675" duration="597000" />
       <workItem from="1623760474140" duration="8349000" />
       <workItem from="1623779678500" duration="10000" />
-      <workItem from="1623855015662" duration="5321000" />
+      <workItem from="1623855015662" duration="8517000" />
+      <workItem from="1623865026365" duration="612000" />
+      <workItem from="1623929166733" duration="2516000" />
     </task>
     <servers />
   </component>

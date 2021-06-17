@@ -24,7 +24,8 @@ class CreateUserTweetsWithLikesProcedure extends Migration
                     ON tweets.id = likes.tweet_id
                     GROUP BY tweets.id
                     HAVING tweets.user_id = param_user_id
-                    ORDER BY likes DESC;
+                    ORDER BY likes DESC
+                    LIMIT 1;
                 ELSE
                     SELECT tweets.id, tweets.user_id, tweets.body, tweets.created_at, SUM(liked) likes, SUM(!liked) dislikes
                     FROM tweets
@@ -32,7 +33,8 @@ class CreateUserTweetsWithLikesProcedure extends Migration
                     ON tweets.id = likes.tweet_id
                     GROUP BY tweets.id
                     HAVING tweets.user_id = param_user_id
-                    ORDER BY dislikes DESC;
+                    ORDER BY dislikes DESC
+                    LIMIT 1;
                 END IF;
             END 
         ");

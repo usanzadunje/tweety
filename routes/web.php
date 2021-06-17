@@ -43,6 +43,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/notifications', 'NotificationController@index');
 
+    Route::view('/analytics', 'analytics.index')->name('analytics');
+
 });
 
 

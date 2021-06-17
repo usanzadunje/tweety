@@ -43,7 +43,7 @@
     <li class="ml-2">
         <a
                 class="font-bold mb-4 block hover:text-blue-300"
-{{--                href="{{route('analytics')}}"--}}
+                href="{{route('analytics')}}"
         >
             <i class="fas fa-chart-bar"></i>
             Analytics
