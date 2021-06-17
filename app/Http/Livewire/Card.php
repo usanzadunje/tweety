@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use App\User;
 use App\Tweet;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Livewire\Component;
 
@@ -19,8 +20,9 @@ class Card extends Component
     public function mount()
     {
         $this->tweet = $this->analyticsFor === 'self'
-            ? auth()->user()->tweets()->latest()->first()
-            : Tweet::find(18);
+            ? new Tweet((array)DB::select('CALL most_liked_tweet(?)', [auth()->id()])[0])
+            : new Tweet((array)DB::select('CALL most_liked_tweet(NULL)')[0]);
+
         if($this->analyticsFor === 'self')
         {
             $this->user = auth()->user();
@@ -29,7 +31,7 @@ class Card extends Component
         {
             $this->user = $this->cardType === 'tweet'
                 ? $this->tweet->user
-                : DB::select('CALL most_followed_person')[0];
+                : new User((array)DB::select('CALL most_followed_user()')[0]);
         }
 
     }
@@ -38,7 +40,7 @@ class Card extends Component
     {
         return view('livewire.card', [
             'tweet' => auth()->user()->tweets()->latest()->first(),
-            'user' => $this->user
+            'user' => $this->user,
         ]);
     }
 }

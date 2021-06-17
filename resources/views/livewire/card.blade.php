@@ -49,35 +49,40 @@
                 >
                     <img
                             class="object-cover w-8 h-8 border-2 border-white rounded-full"
-                            src="https://storageapi.fleek.co/kamaludin21-team-bucket/portfolio/avatar.jpg"
+                            src="{{ $user->avatar }}"
                             alt="profile users"
                             loading="lazy"
                     />
                     <div class="">
-                        <p class="text-sm font-semibold tracking-wide text-gray-200">
-                            {{ $user->username }}
-                        </p>
-                    </div>
-                </div>
-                <div class="flex items-center flex-shrink-0 px-2">
-                    <div class="flex items-center space-x-1 text-gray-400">
-                        <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
+                        <a
+                            href="{{ route('profile', $user) }}"
+                            class="text-sm font-semibold tracking-wide text-gray-200 hover:text-blue-300"
                         >
-                            <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                            />
-                        </svg>
-                        <p class="font-medium">{{ $tweet->likeCount() }}</p>
+                            {{ $user->username }}
+                        </a>
                     </div>
                 </div>
+                @if($cardType === 'tweet')
+                    <div class="flex items-center flex-shrink-0 px-2">
+                        <div class="flex items-center space-x-1 text-gray-400">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                            >
+                                <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                                />
+                            </svg>
+                            <p class="font-medium">{{ $tweet->likeCount() }}</p>
+                        </div>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
