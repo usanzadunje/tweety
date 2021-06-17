@@ -2,7 +2,7 @@
     <div class="flex flex-col h-full max-w-lg mx-auto bg-gray-800 rounded-lg">
         <img
                 class="rounded-lg rounded-b-none"
-                src="http://www.3forty.media/ruki/wp-content/uploads/2020/06/meditation-yoga-1024x682.jpg"
+                src="https://via.placeholder.com/1024x682/D1D5DB/93C5FD"
                 alt="thumbnail"
                 loading="lazy"
         />
@@ -55,16 +55,16 @@
                     />
                     <div class="">
                         <a
-                            href="{{ route('profile', $user) }}"
-                            class="text-sm font-semibold tracking-wide text-gray-200 hover:text-blue-300"
+                                href="{{ route('profile', $user) }}"
+                                class="text-sm font-semibold tracking-wide text-gray-200 hover:text-blue-300"
                         >
                             {{ $user->username }}
                         </a>
                     </div>
                 </div>
-                @if($cardType === 'tweet')
-                    <div class="flex items-center flex-shrink-0 px-2">
-                        <div class="flex items-center space-x-1 text-gray-400">
+                <div class="flex items-center flex-shrink-0 px-2">
+                    <div class="flex items-center space-x-1 text-gray-400">
+                        @if($cardType === 'tweet')
                             <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-5 w-5"
@@ -79,10 +79,14 @@
                                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                                 />
                             </svg>
-                            <p class="font-medium">{{ $tweet->likeCount() }}</p>
-                        </div>
+                        @else
+                            <div>
+                                <i class="far fa-user"></i>
+                            </div>
+                        @endif
+                        <p class="font-medium">{{ $cardType === 'tweet' ? $tweet->likeCount() : $user->followers() }}</p>
                     </div>
-                @endif
+                </div>
             </div>
         </div>
     </div>

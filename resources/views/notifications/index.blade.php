@@ -1,5 +1,5 @@
 <x-app>
-    <h1 class="text-2xl font-bold mb-10">Notifications</h1>
+    <h1 class="text-4xl text-blue-300 font-bold mb-10 text-center"><i class="fas fa-bell"></i> Notifications</h1>
 
     <div>
         @forelse($notifications as $notification)
