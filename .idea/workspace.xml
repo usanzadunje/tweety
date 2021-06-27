@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9c89d971-a3a1-405d-a7e9-d3617c445253" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Card.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Card.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/analytics/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/analytics/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sidebar-links.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sidebar-links.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ExplorePeopleList.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ExplorePeopleList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/explore-people-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/explore-people-list.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -388,7 +388,7 @@
       <workItem from="1623865026365" duration="612000" />
       <workItem from="1623929166733" duration="9539000" />
       <workItem from="1624021668987" duration="44000" />
-      <workItem from="1624793134940" duration="3275000" />
+      <workItem from="1624793134940" duration="5751000" />
     </task>
     <servers />
   </component>

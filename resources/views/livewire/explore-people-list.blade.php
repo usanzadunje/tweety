@@ -1,4 +1,7 @@
-<div class="pt-10">
+<div class="pt-1">
+    <div class="flex justify-center mb-10">
+        <input wire:model="searchTerm" type="search" class="border-2 border-blue-300 w-full h-10 rounded-full px-4 py-1">
+    </div>
     @foreach($users as $user)
         <div class="flex justify-between">
             <a href="{{ $user->path() }}">
