@@ -5,5 +5,6 @@
         @livewire('card', ['title' => 'Your most liked tweet', 'analyticsFor' => 'self', 'cardType' => 'tweet'])
         @livewire('card', ['title' => 'Most liked tweet on platform', 'analyticsFor' => 'global', 'cardType' => 'tweet'])
         @livewire('card', ['title' => 'Most followed person on platform', 'analyticsFor' => 'global', 'cardType' => 'person'])
+        @livewire('card', ['title' => 'Most tweets by person on platform', 'analyticsFor' => 'global', 'cardType' => 'personTweet'])
     </div>
 </x-app>

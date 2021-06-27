@@ -29,9 +29,14 @@ class Card extends Component
         }
         else
         {
-            $this->user = $this->cardType === 'tweet'
-                ? $this->tweet->user
-                : new User((array)DB::select('CALL most_followed_user()')[0]);
+            if($this->cardType === 'personTweet'){
+                $this->user = new User((array)DB::select('CALL most_tweets_by_user')[0]);
+            }
+            else{
+                $this->user = $this->cardType === 'tweet'
+                    ? $this->tweet->user
+                    : new User((array)DB::select('CALL most_followed_user()')[0]);
+            }
         }
 
     }

@@ -6,7 +6,7 @@
     </li>
     <li class="ml-2">
         <a
-                class="font-bold mb-4 block hover:text-blue-300"
+                class="font-bold mb-4 block hover:text-blue-300 {{ request()->segment(1) === 'tweets' ? 'text-blue-300' : ''}}"
                 href="{{route('home')}}"
         >
             <i class="fas fa-home"></i>
@@ -15,7 +15,7 @@
     </li>
     <li class="ml-2">
         <a
-                class="font-bold mb-4 block hover:text-blue-300"
+                class="font-bold mb-4 block hover:text-blue-300 {{ request()->segment(1) === 'explore' ? 'text-blue-300' : ''}}"
                 href="/explore"
         >
             <i class="fas fa-hashtag"></i>
@@ -24,7 +24,7 @@
     </li>
     <li class="ml-2">
         <a
-                class="font-bold mb-4 block hover:text-blue-300"
+                class="font-bold mb-4 block hover:text-blue-300 {{ request()->segment(1) === 'notifications' ? 'text-blue-300' : ''}}"
                 href="/notifications"
         >
             <i class="fas fa-bell"></i>
@@ -33,7 +33,7 @@
     </li>
     <li class="ml-2">
         <a
-                class="font-bold mb-4 block hover:text-blue-300"
+                class="font-bold mb-4 block hover:text-blue-300 {{ request()->segment(1) === 'profiles' ? 'text-blue-300' : ''}}"
                 href="{{route('profile', auth()->user())}}"
         >
             <i class="fas fa-user-cog"></i>
@@ -42,7 +42,7 @@
     </li>
     <li class="ml-2">
         <a
-                class="font-bold mb-4 block hover:text-blue-300"
+                class="font-bold mb-4 block hover:text-blue-300 {{ request()->segment(1) === 'analytics' ? 'text-blue-300' : ''}}"
                 href="{{route('analytics')}}"
         >
             <i class="fas fa-chart-bar"></i>
