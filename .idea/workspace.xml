@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9c89d971-a3a1-405d-a7e9-d3617c445253" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ExplorePeopleList.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ExplorePeopleList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/explore-people-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/explore-people-list.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +309,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjekatA" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -388,7 +385,10 @@
       <workItem from="1623865026365" duration="612000" />
       <workItem from="1623929166733" duration="9539000" />
       <workItem from="1624021668987" duration="44000" />
-      <workItem from="1624793134940" duration="5751000" />
+      <workItem from="1624793134940" duration="6469000" />
+      <workItem from="1624983503487" duration="519000" />
+      <workItem from="1625059584281" duration="520000" />
+      <workItem from="1625225005869" duration="61000" />
     </task>
     <servers />
   </component>
